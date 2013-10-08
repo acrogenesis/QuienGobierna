@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  state: 1
+  nameState: MyString
+  district: 1
+  city: MyString
+  start: 1
+  finish: 1
+  total: 1
+
+two:
+  state: 1
+  nameState: MyString
+  district: 1
+  city: MyString
+  start: 1
+  finish: 1
+  total: 1
