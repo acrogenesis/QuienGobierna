@@ -3,8 +3,27 @@
     <h1 style="text-align: center">¿Quién Gobierna?</h1>
     <p style="text-align: center">Un servicio simple y fácil donde puedes contactar a tus diputados, senadores y tu gobernador</p>
     <div class="row">
+      <p>Introduce los datos de tu IFE:</p>
+    </div>
+    <div class="row">
       <div class="col-xs-5">
-        FORM
+        <%= form_tag "",:role=>"form" do %>
+          <div class="form-group">
+            <%= label_tag "state", "Estado" %>
+            <%= text_field_tag "state", "", :class=>"form-control", :placeholder=>"19" %>
+          </div>
+          <div class="form-group">
+            <%= label_tag "city", "Municipio" %>
+            <%= text_field_tag "city", "", :class=>"form-control", :placeholder=>"40" %>
+          </div>
+          <div class="form-group">
+            <%= label_tag "section", "Sección" %>
+            <%= text_field_tag "section", "", :class=>"form-control", :placeholder=>"1327" %>
+          </div>
+          <%= button_tag :type=>"submit", :class=>"btn btn-primary" do %>
+            Buscar
+          <% end %>
+        <% end %>
       </div>
       <div class="col-xs-7">
         <%= image_tag("ife.png", :class=>"img-responsive", :alt=>"Introduce los datos de tu IFE") %>
