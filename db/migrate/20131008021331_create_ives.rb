@@ -4,7 +4,8 @@ class CreateIves < ActiveRecord::Migration
       t.integer :state
       t.string :nameState
       t.integer :district
-      t.string :city
+      t.integer :city
+      t.string :nameCity
       t.integer :start
       t.integer :finish
       t.integer :total
