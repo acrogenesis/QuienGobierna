@@ -1,0 +1,16 @@
+<div class="row">
+  <% @senators.each do |s| %>
+    <div class="col-sm-6 col-md-4">
+      <div class="thumbnail">
+        <%= image_tag s.image, :class=>"img-responsive", :alt=>s.name %>
+        <div class="caption">
+          <h3><%= s.name %></h3>
+          <p>Estado: <%= s.state %></p>
+          <p>Teléfono: <%= s.phone %></p>
+          <p>Extensiones: <%= s.extention %></p>
+          <p>Correo: <%= mail_to s.email %></p>
+        </div>
+      </div>
+    </div>
+  <% end %>
+</div>

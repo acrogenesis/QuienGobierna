@@ -1,0 +1,14 @@
+<div class="row">
+  <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <%= image_tag @deputies.image, :class=>"img-responsive", :alt=>@deputies.name %>
+      <div class="caption">
+        <h3><%= @deputies.name %></h3>
+        <p>Estado: <%= @deputies.state %></p>
+        <p>Distrito: <%= @deputies.district %></p>
+        <p>Partido: <%= @deputies.party %></p>
+        <p>Correo: <%= mail_to @deputies.email %></p>
+      </div>
+    </div>
+  </div>
+</div>
