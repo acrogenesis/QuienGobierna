@@ -45,4 +45,4 @@ governors.each do |attributes|
     g.party = attributes[:party]
   end
 end
-
+puts "termine gobernadores"

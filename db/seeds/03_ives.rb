@@ -4265,3 +4265,4 @@ ives.each do |attributes|
     i.total = attributes[:total]
   end
 end
+puts "termine ife"

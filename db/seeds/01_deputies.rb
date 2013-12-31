@@ -314,3 +314,4 @@ deputies.each do |attributes|
     d.image = attributes[:image]
   end
 end
+puts "termine diputados"

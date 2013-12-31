@@ -141,4 +141,4 @@ senators.each do |attributes|
   end
 end
 
-
+puts "termine senadores"
