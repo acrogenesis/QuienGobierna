@@ -5,7 +5,7 @@
 # Make sure the secret is at least 30 characters and all random,
 # no regular words or you'll be exposed to dictionary attacks.
 QuienGobierna::Application.config.secret_key_base = if Rails.env.production?
-  ('x' * 30) # meets minimum requirement of 30 chars long
-else
   ENV['SECRET_KEY_BASE'] # set secret_token from ENV
+else
+  ('x' * 30) # meets minimum requirement of 30 chars long
 end
