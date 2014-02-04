@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 ruby '2.1.0'
 
 #mysql
-gem 'mysql2'
+gem 'pg'
 
 #dokku
 gem 'rails_12factor'
