@@ -1,29 +1,19 @@
-development:
-  adapter: mysql2
-  encoding: utf8
-  database: quiengobierna
-  pool: 10
+postgresql: &postgresql
+  adapter: postgresql
+  host: localhost
+  min_messages: ERROR
+  pool: 5
   timeout: 5000
-  username: mysqluser
-  password: mysqlpass
-  collation: utf8_general_ci
+
+development:
+  <<: *postgresql
+  database: quiengobierna_development
 
 test:
-  adapter: mysql2
-  encoding: utf8
-  database: quiengobierna
-  pool: 10
-  timeout: 5000
-  username: mysqluser
-  password: mysqlpass
-  collation: utf8_general_ci
+  <<: *postgresql
+  database: quiengobierna_test
 
 production:
-  adapter: mysql2
-  encoding: utf8
-  database: quiengobierna
-  pool: 10
-  timeout: 5000
-  username: mysqluser
-  password: mysqlpass
-  collation: utf8_general_ci
+  <<: *postgresql
+  database: quiengobierna_production
+
