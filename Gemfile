@@ -1,10 +1,10 @@
 source 'https://rubygems.org'
 ruby '2.1.3'
 
-#mysql
+# mysql
 gem 'mysql2'
 
-#dokku
+# dokku
 gem 'rails_12factor'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'

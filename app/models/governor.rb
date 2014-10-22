@@ -3,6 +3,6 @@ class Governor < ActiveRecord::Base
     where("state like '%#{state}%'")
   end
   def image
-    "imggob/Th_" + self.name.delete(' ') + ".jpg"
+    'imggob/Th_' + name.delete(' ') + '.jpg'
   end
 end
