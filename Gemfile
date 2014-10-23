@@ -7,6 +7,8 @@ gem 'mysql2'
 # dokku
 gem 'rails_12factor'
 
+gem 'unicorn'
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.10'
 
