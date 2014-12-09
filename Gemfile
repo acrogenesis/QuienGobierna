@@ -38,5 +38,12 @@ group :doc do
   gem 'sdoc', require: false
 end
 
-#Bootstrap Theme
+group :development do
+  gem 'better_errors'
+  gem 'binding_of_caller'
+  gem 'did_you_mean'
+  gem 'hirb'
+end
+
+# Bootstrap Theme
 gem 'bootstrap-sass', '~> 3.0.3.0'

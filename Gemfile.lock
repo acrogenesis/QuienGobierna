@@ -26,9 +26,16 @@ GEM
       thread_safe (~> 0.1)
       tzinfo (~> 0.3.37)
     arel (4.0.2)
+    better_errors (2.0.0)
+      coderay (>= 1.0.0)
+      erubis (>= 2.6.6)
+      rack (>= 0.9.0)
+    binding_of_caller (0.7.2)
+      debug_inspector (>= 0.0.1)
     bootstrap-sass (3.0.3.0)
       sass (~> 3.2)
     builder (3.1.4)
+    coderay (1.1.0)
     coffee-rails (4.0.1)
       coffee-script (>= 2.2.0)
       railties (>= 4.0.0, < 5.0)
@@ -36,10 +43,15 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.8.0)
+    debug_inspector (0.0.2)
+    did_you_mean (0.9.4)
+      interception
     erubis (2.7.0)
     execjs (2.2.2)
     hike (1.2.3)
+    hirb (0.7.2)
     i18n (0.6.11)
+    interception (0.5)
     jbuilder (1.5.3)
       activesupport (>= 3.0.0)
       multi_json (>= 1.2.0)
@@ -115,8 +127,12 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  better_errors
+  binding_of_caller
   bootstrap-sass (~> 3.0.3.0)
   coffee-rails (~> 4.0.0)
+  did_you_mean
+  hirb
   jbuilder (~> 1.2)
   jquery-rails
   mysql2
