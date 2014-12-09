@@ -1,5 +1,5 @@
 class Governor < ActiveRecord::Base
-  def self.governor_list(state)
+  def self.find_by_state(state)
     where("state like '%#{state}%'")
   end
   def image
